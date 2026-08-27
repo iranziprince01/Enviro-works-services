@@ -1,6 +1,6 @@
-# Fresh Edges Services Ltd
+# Enviro Horizon Solutions Ltd
 
-Production-ready marketing website for Fresh Edges Services Ltd — a premium property maintenance company serving Edmonton and surrounding Alberta communities.
+Production-ready marketing website for Enviro Horizon Solutions Ltd — a premium property maintenance company serving Edmonton and surrounding Alberta communities.
 
 ## Tech Stack
 
@@ -56,4 +56,4 @@ No environment variables required for the marketing site. Connect quote and cont
 
 ## License
 
-Proprietary — Fresh Edges Services Ltd.
+Proprietary — Enviro Horizon Solutions Ltd.

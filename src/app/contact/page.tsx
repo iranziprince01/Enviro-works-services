@@ -15,7 +15,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export const metadata: Metadata = createMetadata({
   title: "Contact",
   description:
-    "Contact Fresh Edges Services Ltd in Edmonton for commercial cleaning, residential cleaning, snow removal, and property maintenance. Call, email, or send a message.",
+    "Contact Enviro Horizon Solutions Ltd in Edmonton for commercial cleaning, residential cleaning, snow removal, and property maintenance. Call, email, or send a message.",
   path: "/contact",
 });
 

@@ -14,7 +14,7 @@ type CtaSectionProps = {
 
 export function CtaSection({
   title = "Ready for property care you can count on?",
-  description = "Book your free quote today. Fresh Edges delivers reliable cleaning, maintenance, landscaping, and snow removal across Edmonton and Alberta, with clear pricing and service you can trust.",
+  description = "Book your free quote today. Enviro Horizon delivers reliable cleaning, maintenance, landscaping, and snow removal across Edmonton and Alberta, with clear pricing and service you can trust.",
   buttonLabel = "Get Free Quote",
   variant = "default",
 }: CtaSectionProps) {

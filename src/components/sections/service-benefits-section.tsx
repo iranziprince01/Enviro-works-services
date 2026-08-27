@@ -15,7 +15,7 @@ type ServiceBenefitsSectionProps = {
 };
 
 export function ServiceBenefitsSection({
-  title = "Why Choose Fresh Edges",
+  title = "Why Choose Enviro Horizon",
   benefits,
   image,
   imageAlt,

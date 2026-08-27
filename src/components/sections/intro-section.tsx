@@ -22,7 +22,7 @@ export function IntroSection() {
         >
           <FramedImage
             src={images.intro}
-            alt="Professional property care by Fresh Edges Services"
+            alt="Professional property care by Enviro Horizon Solutions"
             priority
             shadowSide="right"
             sizes="(max-width: 1024px) 340px, 400px"

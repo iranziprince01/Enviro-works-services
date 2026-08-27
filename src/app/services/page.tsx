@@ -41,7 +41,7 @@ export default function ServicesPage() {
             Complete Property Solutions For Homes And Businesses
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/85 sm:mt-6 sm:text-lg">
-            Fresh Edges Services offers year-round professional property care solutions designed
+            Enviro Horizon Solutions offers year-round professional property care solutions designed
             to simplify property management and maintain high-quality spaces.
           </p>
           <div className="mt-8">

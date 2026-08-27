@@ -125,7 +125,7 @@ export default async function ServicePage({ params }: Props) {
       <ServiceBenefitsSection
         benefits={service.benefits}
         image={service.benefitsImage ?? service.heroImage}
-        imageAlt={`${service.shortTitle} by Fresh Edges Services`}
+        imageAlt={`${service.shortTitle} by Enviro Horizon Solutions`}
         ctaLabel="Get Free Quote"
       />
 

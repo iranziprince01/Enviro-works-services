@@ -28,7 +28,7 @@ export function TrustBar() {
   return (
     <section
       className="bg-white py-6 sm:py-8"
-      aria-label="Why book with Fresh Edges"
+      aria-label="Why book with Enviro Horizon"
     >
       <Container>
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">

@@ -17,10 +17,10 @@ export const blogPosts: BlogPost[] = [
     slug: "winter-property-maintenance-checklist-edmonton",
     title: "Winter Property Maintenance Checklist for Edmonton Businesses",
     excerpt:
-      "Prepare your commercial property for Alberta winters with this essential maintenance checklist from Fresh Edges.",
+      "Prepare your commercial property for Alberta winters with this essential maintenance checklist from Enviro Horizon.",
     content:
       "Alberta winters test every property. From ice management to HVAC-adjacent cleaning, proactive preparation reduces liability and keeps tenants safe. Start with a comprehensive snow removal contract, inspect drainage before freeze-up, and schedule pre-winter pressure washing to remove salt and grime buildup.",
-    author: "Fresh Edges Team",
+    author: "Enviro Horizon Team",
     publishedAt: "2026-01-15",
     image: images.snowPlow,
     category: "Seasonal Tips",
@@ -32,8 +32,8 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Traffic patterns, industry type, and tenant expectations all influence the right cleaning frequency. Here's how to decide.",
     content:
-      "High-traffic lobbies and restrooms may need daily attention, while private offices benefit from two to three visits per week. Healthcare and food-adjacent spaces require enhanced protocols. Fresh Edges recommends a site walkthrough to establish the optimal schedule for your building.",
-    author: "Fresh Edges Team",
+      "High-traffic lobbies and restrooms may need daily attention, while private offices benefit from two to three visits per week. Healthcare and food-adjacent spaces require enhanced protocols. Enviro Horizon recommends a site walkthrough to establish the optimal schedule for your building.",
+    author: "Enviro Horizon Team",
     publishedAt: "2025-11-22",
     image: images.commercialMeeting,
     category: "Commercial Cleaning",
@@ -46,7 +46,7 @@ export const blogPosts: BlogPost[] = [
       "Get your lawn and garden ready for the growing season with expert advice tailored to Edmonton's climate.",
     content:
       "Aeration, early weed control, and proper mulching set the foundation for a healthy summer lawn. Remove winter debris, inspect irrigation, and book landscaping early. Edmonton's short growing season rewards those who plan ahead.",
-    author: "Fresh Edges Team",
+    author: "Enviro Horizon Team",
     publishedAt: "2025-03-08",
     image: images.garden,
     category: "Landscaping",
