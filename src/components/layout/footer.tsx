@@ -158,7 +158,7 @@ export function Footer() {
         </div>
 
         <div className="mt-6 flex flex-col gap-4 border-t border-white/10 pt-4 lg:flex-row lg:items-start lg:justify-between">
-          <p className="min-w-0 shrink-0 text-sm leading-snug text-white/50 lg:max-w-[min(100%,20rem)] lg:pt-px">
+          <p className="shrink-0 whitespace-nowrap text-[clamp(0.6875rem,2.6vw,0.875rem)] leading-none text-white/50 lg:pt-px">
             © {year} {siteConfig.name}. All rights reserved.
           </p>
           <LandAcknowledgement
