@@ -87,7 +87,7 @@ export function FramedVideo({
       <div className={cn("relative w-full", fillHeight && "min-h-0 flex-1")}>
         <div
           className={cn(
-            "pointer-events-none absolute top-[5%] z-0 h-[90%] rounded-[1.25rem] bg-fresh-400 sm:rounded-[1.75rem] lg:rounded-[2rem]",
+            "pointer-events-none absolute top-[5%] z-0 h-[90%] rounded-[1.25rem] bg-horizon-400 sm:rounded-[1.75rem] lg:rounded-[2rem]",
             shadowPosition,
           )}
           aria-hidden

@@ -14,7 +14,7 @@ export function ImpactContributionCards() {
               }`}
             >
               <div
-                className="absolute -top-1.5 -right-1.5 h-6 w-6 rounded-full bg-fresh-400/30 blur-md"
+                className="absolute -top-1.5 -right-1.5 h-6 w-6 rounded-full bg-horizon-400/30 blur-md"
                 aria-hidden
               />
               <Icon className="relative h-6 w-6" strokeWidth={1.75} aria-hidden />

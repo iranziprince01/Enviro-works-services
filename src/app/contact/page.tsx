@@ -53,7 +53,7 @@ export default function ContactPage() {
                 <div className="surface-card p-6">
                   <h2 className="font-heading text-lg font-bold">Office Location</h2>
                   <p className="mt-3 flex items-start gap-3 text-muted-foreground">
-                    <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-forest-600 dark:text-fresh-400" aria-hidden />
+                    <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-forest-600 dark:text-horizon-400" aria-hidden />
                     <span>
                       {siteConfig.address.street}
                       <br />
@@ -127,7 +127,7 @@ export default function ContactPage() {
                     {siteConfig.serviceAreas.map((area) => (
                       <li
                         key={area}
-                        className="rounded-full bg-forest-50 px-3 py-1 text-xs font-medium text-forest-700 dark:bg-forest-900/50 dark:text-fresh-300"
+                        className="rounded-full bg-forest-50 px-3 py-1 text-xs font-medium text-forest-700 dark:bg-forest-900/50 dark:text-horizon-300"
                       >
                         {area}
                       </li>

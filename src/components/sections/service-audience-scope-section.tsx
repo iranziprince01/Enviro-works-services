@@ -34,12 +34,12 @@ function AudienceCard({
         <div
           className={
             variant === "gradient"
-              ? "absolute -bottom-12 -left-8 h-36 w-36 rounded-full bg-fresh-400/15 blur-2xl"
-              : "absolute -top-10 -right-10 h-32 w-32 rounded-full bg-fresh-400/20 blur-2xl"
+              ? "absolute -bottom-12 -left-8 h-36 w-36 rounded-full bg-horizon-400/15 blur-2xl"
+              : "absolute -top-10 -right-10 h-32 w-32 rounded-full bg-horizon-400/20 blur-2xl"
           }
           aria-hidden
         />
-        <div className="absolute right-8 bottom-0 h-px w-16 bg-fresh-400/80" aria-hidden />
+        <div className="absolute right-8 bottom-0 h-px w-16 bg-horizon-400/80" aria-hidden />
         <div className="relative">
           <h2 className="font-heading text-xl font-bold tracking-[0.1em] text-white uppercase sm:text-2xl md:text-[1.75rem] md:leading-tight md:tracking-[0.12em]">
             {title}

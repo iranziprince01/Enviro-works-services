@@ -55,7 +55,7 @@ export function IntroSection() {
           </p>
           <div className="flex gap-3 pt-1 sm:gap-4 md:gap-5">
             <span
-              className="shrink-0 font-heading text-5xl font-black leading-none text-fresh-400 sm:text-6xl md:text-7xl lg:text-8xl"
+              className="shrink-0 font-heading text-5xl font-black leading-none text-horizon-400 sm:text-6xl md:text-7xl lg:text-8xl"
               aria-hidden
             >
               &lsquo;

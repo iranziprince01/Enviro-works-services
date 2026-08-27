@@ -74,7 +74,7 @@ export function NavDropdown({ item, isActive, isOpen, onOpen, onClose }: NavDrop
                 >
                   {item.groups.map((group) => (
                     <div key={group.label} className="p-2">
-                      <p className="mb-2 px-2 text-xs font-semibold uppercase tracking-wider text-forest-600 dark:text-fresh-400">
+                      <p className="mb-2 px-2 text-xs font-semibold uppercase tracking-wider text-forest-600 dark:text-horizon-400">
                         {group.label}
                       </p>
                       <ul className="space-y-0.5">
@@ -115,7 +115,7 @@ export function NavDropdown({ item, isActive, isOpen, onOpen, onClose }: NavDrop
                         className={cn(
                           "block rounded-xl px-3 py-2.5 transition-colors hover:bg-forest-50 dark:hover:bg-forest-900/40",
                           link.title.startsWith("View") || link.title.startsWith("All")
-                            ? "font-medium text-forest-600 dark:text-fresh-400"
+                            ? "font-medium text-forest-600 dark:text-horizon-400"
                             : "",
                         )}
                       >

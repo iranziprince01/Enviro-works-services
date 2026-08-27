@@ -68,11 +68,11 @@ export default function QuotePage() {
                     Our team is ready to discuss your property needs.
                   </p>
                   <div className="mt-4 space-y-3">
-                    <a href={siteConfig.phoneHref} className="flex items-center gap-2 text-sm font-medium text-forest-600 hover:text-forest-700 dark:text-fresh-400">
+                    <a href={siteConfig.phoneHref} className="flex items-center gap-2 text-sm font-medium text-forest-600 hover:text-forest-700 dark:text-horizon-400">
                       <Phone className="h-4 w-4" aria-hidden />
                       {siteConfig.phone}
                     </a>
-                    <a href={`mailto:${siteConfig.email}`} className="flex min-w-0 items-center gap-2 break-all text-sm font-medium text-forest-600 hover:text-forest-700 sm:break-normal dark:text-fresh-400">
+                    <a href={`mailto:${siteConfig.email}`} className="flex min-w-0 items-center gap-2 break-all text-sm font-medium text-forest-600 hover:text-forest-700 sm:break-normal dark:text-horizon-400">
                       <Mail className="h-4 w-4" aria-hidden />
                       {siteConfig.email}
                     </a>

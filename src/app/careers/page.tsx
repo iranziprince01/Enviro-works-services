@@ -115,7 +115,7 @@ export default function CareersPage() {
                 <li key={item}>
                   <div className="flex items-center gap-3 rounded-lg border border-border/80 bg-card px-4 py-3.5">
                     <CheckCircle2
-                      className="h-4 w-4 shrink-0 text-forest-600 dark:text-fresh-400"
+                      className="h-4 w-4 shrink-0 text-forest-600 dark:text-horizon-400"
                       aria-hidden
                     />
                     <span className="text-sm leading-snug text-foreground">{item}</span>
@@ -150,7 +150,7 @@ export default function CareersPage() {
                 <p className="text-sm font-medium text-foreground">Resume submission</p>
                 <a
                   href={`mailto:${siteConfig.careersEmail}`}
-                  className="mt-2 inline-flex min-w-0 max-w-full items-center justify-center gap-2 break-all text-base font-medium text-forest-600 transition-colors hover:text-forest-700 sm:text-lg sm:break-normal dark:text-fresh-400"
+                  className="mt-2 inline-flex min-w-0 max-w-full items-center justify-center gap-2 break-all text-base font-medium text-forest-600 transition-colors hover:text-forest-700 sm:text-lg sm:break-normal dark:text-horizon-400"
                 >
                   <Mail className="h-5 w-5 shrink-0" aria-hidden />
                   {siteConfig.careersEmail}
@@ -160,7 +160,7 @@ export default function CareersPage() {
                   opportunities become available.
                 </p>
               </div>
-              <p className="mt-6 text-sm font-medium text-forest-600 dark:text-fresh-400">
+              <p className="mt-6 text-sm font-medium text-forest-600 dark:text-horizon-400">
                 Your future opportunity could start here.
               </p>
             </CardContent>

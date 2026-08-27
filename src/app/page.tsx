@@ -108,7 +108,7 @@ export default function HomePage() {
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-white/80">
                   {category.description}
                 </p>
-                <span className="mt-6 inline-flex items-center text-sm font-semibold text-fresh-300">
+                <span className="mt-6 inline-flex items-center text-sm font-semibold text-horizon-300">
                   View Services
                   <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden />
                 </span>
@@ -127,7 +127,7 @@ export default function HomePage() {
       <Section className="bg-forest-600 py-16 text-white sm:py-20 md:py-28 lg:py-32">
         <Container>
           <div className="mx-auto mb-12 max-w-2xl text-center sm:mb-14">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-fresh-300">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-horizon-300">
               Results that speak for themselves
             </p>
             <h2 className="mt-3 font-heading text-[1.65rem] font-bold tracking-tight text-white sm:text-3xl md:text-4xl">
@@ -171,7 +171,7 @@ export default function HomePage() {
                   />
                 </div>
                 <CardContent className="p-6">
-                  <span className="font-heading text-sm font-bold text-forest-600 dark:text-fresh-400">
+                  <span className="font-heading text-sm font-bold text-forest-600 dark:text-horizon-400">
                     {step.step}
                   </span>
                   <h3 className="mt-2 font-heading text-xl font-bold tracking-tight">
@@ -204,7 +204,7 @@ export default function HomePage() {
                 <CardContent className="p-7 sm:p-8">
                   <div className="mb-4 flex gap-0.5" aria-label={`${t.rating} out of 5 stars`}>
                     {Array.from({ length: t.rating }).map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-fresh-500 text-fresh-500" aria-hidden />
+                      <Star key={i} className="h-4 w-4 fill-horizon-500 text-horizon-500" aria-hidden />
                     ))}
                   </div>
                   <blockquote className="text-sm leading-relaxed text-foreground/80">

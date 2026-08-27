@@ -42,7 +42,7 @@ export default function TestimonialsPage() {
                 <CardContent className="p-6">
                   <div className="mb-3 flex gap-0.5" aria-label={`${t.rating} out of 5 stars`}>
                     {Array.from({ length: t.rating }).map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-fresh-500 text-fresh-500" aria-hidden />
+                      <Star key={i} className="h-4 w-4 fill-horizon-500 text-horizon-500" aria-hidden />
                     ))}
                   </div>
                   <Badge variant="secondary" className="mb-3">{t.service}</Badge>

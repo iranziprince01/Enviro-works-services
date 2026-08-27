@@ -69,7 +69,7 @@ export function QuoteForm({ className }: { className?: string }) {
         )}
         role="status"
       >
-        <CheckCircle2 className="mb-4 h-14 w-14 text-forest-600 dark:text-fresh-400" />
+        <CheckCircle2 className="mb-4 h-14 w-14 text-forest-600 dark:text-horizon-400" />
         <h3 className="font-heading text-2xl font-semibold">Service Request Received</h3>
         <p className="mt-2 max-w-md text-muted-foreground">
           Thank you. Our team will contact you shortly to confirm your booking request.

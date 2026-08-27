@@ -136,7 +136,7 @@ export default async function ServicePage({ params }: Props) {
             {service.process.map((step, i) => (
               <Card key={step.title} className="border-border/60 bg-card/80">
                 <CardContent className="p-6">
-                  <span className="text-sm font-bold text-forest-600 dark:text-fresh-400">
+                  <span className="text-sm font-bold text-forest-600 dark:text-horizon-400">
                     Step {i + 1}
                   </span>
                   <h3 className="mt-2 font-heading font-semibold">{step.title}</h3>

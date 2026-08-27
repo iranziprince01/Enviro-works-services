@@ -37,7 +37,7 @@ export default function IndustriesPage() {
             {industries.map((industry) => (
               <Card key={industry.slug} id={industry.slug} className="scroll-mt-28 border-border/60">
                 <CardContent className="p-6">
-                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-forest-50 text-forest-700 dark:bg-forest-900 dark:text-fresh-400">
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-forest-50 text-forest-700 dark:bg-forest-900 dark:text-horizon-400">
                     <industry.icon className="h-6 w-6" aria-hidden />
                   </div>
                   <h2 className="font-heading text-xl font-semibold">{industry.title}</h2>

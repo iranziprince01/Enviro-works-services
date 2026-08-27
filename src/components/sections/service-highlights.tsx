@@ -28,10 +28,10 @@ export function ServiceHighlights() {
             <Link
               key={`${service.slug}-${index}`}
               href={`/services/${service.slug}`}
-              className="group flex shrink-0 items-center gap-3 rounded-full border border-white/15 bg-white/10 px-5 py-2.5 backdrop-blur-md transition-colors hover:border-fresh-400/40 hover:bg-white/15"
+              className="group flex shrink-0 items-center gap-3 rounded-full border border-white/15 bg-white/10 px-5 py-2.5 backdrop-blur-md transition-colors hover:border-horizon-400/40 hover:bg-white/15"
             >
               <Icon
-                className="h-4 w-4 text-fresh-400 transition-transform group-hover:scale-110"
+                className="h-4 w-4 text-horizon-400 transition-transform group-hover:scale-110"
                 aria-hidden
               />
               <span className="whitespace-nowrap text-sm font-medium text-white/90">

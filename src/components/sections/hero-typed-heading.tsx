@@ -12,11 +12,11 @@ const HEADING_LINES: readonly HeadingLine[] = [
   {
     segments: [
       { text: "Property", className: "text-white" },
-      { text: "Services", className: "text-fresh-300" },
+      { text: "Services", className: "text-horizon-300" },
     ],
   },
   { segments: [{ text: "Built Around", className: "text-white" }] },
-  { segments: [{ text: "Reliability", className: "text-fresh-300" }] },
+  { segments: [{ text: "Reliability", className: "text-horizon-300" }] },
 ] as const;
 
 const START_DELAY_MS = 400;
@@ -251,7 +251,7 @@ export function HeroTypedHeading() {
                     </span>
                     {isActiveSegment ? (
                       <span
-                        className={`ml-0.5 inline-block w-[0.08em] translate-y-[0.06em] bg-fresh-300 align-baseline ${
+                        className={`ml-0.5 inline-block w-[0.08em] translate-y-[0.06em] bg-horizon-300 align-baseline ${
                           showCursor ? "opacity-100" : "opacity-0"
                         }`}
                         style={{ height: "0.85em" }}

@@ -13,7 +13,7 @@ export function FaqAccordion({ items }: { items: FaqItem[] | { question: string;
     <Accordion className="w-full">
       {items.map((item, i) => (
         <AccordionItem key={i} value={`faq-${i}`} className="border-border/60">
-          <AccordionTrigger className="text-left font-medium hover:text-forest-600 hover:no-underline dark:hover:text-fresh-400">
+          <AccordionTrigger className="text-left font-medium hover:text-forest-600 hover:no-underline dark:hover:text-horizon-400">
             {item.question}
           </AccordionTrigger>
           <AccordionContent className="text-muted-foreground leading-relaxed">

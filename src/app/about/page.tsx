@@ -115,11 +115,11 @@ export default function AboutPage() {
             <article className="group flex flex-col overflow-hidden rounded-[1.75rem] border border-forest-200/80 bg-white shadow-[0_16px_40px_rgba(20,83,45,0.08)] transition-[transform,box-shadow] hover:-translate-y-1 hover:shadow-[0_24px_48px_rgba(20,83,45,0.12)]">
               <div className="relative overflow-hidden bg-forest-600 px-8 py-10 md:px-10 md:py-12">
                 <div
-                  className="absolute -top-10 -right-10 h-32 w-32 rounded-full bg-fresh-400/20 blur-2xl"
+                  className="absolute -top-10 -right-10 h-32 w-32 rounded-full bg-horizon-400/20 blur-2xl"
                   aria-hidden
                 />
                 <div
-                  className="absolute right-8 bottom-0 h-px w-16 bg-fresh-400/80"
+                  className="absolute right-8 bottom-0 h-px w-16 bg-horizon-400/80"
                   aria-hidden
                 />
                 <div className="relative">
@@ -136,11 +136,11 @@ export default function AboutPage() {
             <article className="group flex flex-col overflow-hidden rounded-[1.75rem] border border-forest-200/80 bg-white shadow-[0_16px_40px_rgba(20,83,45,0.08)] transition-[transform,box-shadow] hover:-translate-y-1 hover:shadow-[0_24px_48px_rgba(20,83,45,0.12)]">
               <div className="relative overflow-hidden bg-gradient-to-br from-forest-700 via-forest-600 to-forest-600 px-8 py-10 md:px-10 md:py-12">
                 <div
-                  className="absolute -bottom-12 -left-8 h-36 w-36 rounded-full bg-fresh-400/15 blur-2xl"
+                  className="absolute -bottom-12 -left-8 h-36 w-36 rounded-full bg-horizon-400/15 blur-2xl"
                   aria-hidden
                 />
                 <div
-                  className="absolute right-8 bottom-0 h-px w-16 bg-fresh-400/80"
+                  className="absolute right-8 bottom-0 h-px w-16 bg-horizon-400/80"
                   aria-hidden
                 />
                 <div className="relative">
@@ -178,14 +178,14 @@ export default function AboutPage() {
                   }`}
                 >
                   <div
-                    className="absolute -top-8 -right-8 h-24 w-24 rounded-full bg-fresh-400/20 blur-2xl"
+                    className="absolute -top-8 -right-8 h-24 w-24 rounded-full bg-horizon-400/20 blur-2xl"
                     aria-hidden
                   />
                   <div
-                    className="absolute right-7 bottom-0 h-px w-12 bg-fresh-400/80 md:right-8"
+                    className="absolute right-7 bottom-0 h-px w-12 bg-horizon-400/80 md:right-8"
                     aria-hidden
                   />
-                  <h3 className="relative font-heading text-xl font-bold tracking-tight text-fresh-300 md:text-2xl">
+                  <h3 className="relative font-heading text-xl font-bold tracking-tight text-horizon-300 md:text-2xl">
                     {value.title}
                   </h3>
                 </div>

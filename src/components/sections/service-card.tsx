@@ -31,14 +31,14 @@ export function ServiceCard({
         >
           <CardContent className="flex h-full flex-col p-8">
             <Icon
-              className="mb-6 h-6 w-6 text-forest-600 dark:text-fresh-400"
+              className="mb-6 h-6 w-6 text-forest-600 dark:text-horizon-400"
               aria-hidden
             />
             <h3 className="font-heading text-xl font-semibold tracking-tight">{title}</h3>
             <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
               {description}
             </p>
-            <span className="mt-6 inline-flex items-center text-sm font-medium text-forest-600 transition-colors group-hover:text-forest-700 dark:text-fresh-400">
+            <span className="mt-6 inline-flex items-center text-sm font-medium text-forest-600 transition-colors group-hover:text-forest-700 dark:text-horizon-400">
               Learn more
               <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden />
             </span>

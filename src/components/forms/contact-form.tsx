@@ -44,7 +44,7 @@ export function ContactForm() {
   if (status === "success") {
     return (
       <div className="flex flex-col items-center rounded-2xl border border-forest-200 bg-forest-50 p-8 text-center dark:border-forest-800 dark:bg-forest-950/50" role="status">
-        <CheckCircle2 className="mb-3 h-12 w-12 text-forest-600 dark:text-fresh-400" />
+        <CheckCircle2 className="mb-3 h-12 w-12 text-forest-600 dark:text-horizon-400" />
         <h3 className="font-heading text-xl font-bold">Message Sent</h3>
         <p className="mt-2 text-sm text-muted-foreground">
           We&apos;ll get back to you within one business day.

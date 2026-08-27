@@ -29,7 +29,7 @@ export function HeroSection() {
           >
             <div>
               <HeroTypedHeading />
-              <p className="mt-6 max-w-xl text-balance text-[0.65rem] font-medium uppercase tracking-[0.12em] text-fresh-300 sm:mt-8 sm:text-xs sm:tracking-[0.18em] md:text-sm">
+              <p className="mt-6 max-w-xl text-balance text-[0.65rem] font-medium uppercase tracking-[0.12em] text-horizon-300 sm:mt-8 sm:text-xs sm:tracking-[0.18em] md:text-sm">
                 {siteConfig.tagline}
               </p>
             </div>

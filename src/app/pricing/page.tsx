@@ -36,7 +36,7 @@ export default function PricingPage() {
           <p className="mt-4 max-w-2xl text-base text-white/80 sm:text-lg">
             Every property is unique. We provide transparent, customized quotes, never one-size-fits-all pricing.
           </p>
-          <Button asChild size="lg" className="mt-6 w-full bg-fresh-500 text-forest-950 hover:bg-fresh-400 sm:mt-8 sm:w-auto">
+          <Button asChild size="lg" className="mt-6 w-full bg-horizon-500 text-forest-950 hover:bg-horizon-400 sm:mt-8 sm:w-auto">
             <Link href="/quote">Get Free Quote</Link>
           </Button>
         </Container>
@@ -51,7 +51,7 @@ export default function PricingPage() {
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {pricingFactors.map((factor) => (
               <div key={factor} className="flex gap-3 rounded-2xl border border-border/60 p-5">
-                <CheckCircle2 className="h-5 w-5 shrink-0 text-forest-600 dark:text-fresh-400" aria-hidden />
+                <CheckCircle2 className="h-5 w-5 shrink-0 text-forest-600 dark:text-horizon-400" aria-hidden />
                 <p className="text-sm">{factor}</p>
               </div>
             ))}

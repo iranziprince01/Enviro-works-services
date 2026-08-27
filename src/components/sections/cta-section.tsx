@@ -23,11 +23,11 @@ export function CtaSection({
       <Container>
         <div className="relative overflow-hidden rounded-[1.75rem] bg-forest-600 px-6 py-12 text-center shadow-[0_20px_48px_rgba(20,83,45,0.18)] sm:px-10 sm:py-14 md:px-14 lg:rounded-[2rem]">
           <div
-            className="pointer-events-none absolute -top-16 -right-16 h-48 w-48 rounded-full bg-fresh-400/20 blur-3xl"
+            className="pointer-events-none absolute -top-16 -right-16 h-48 w-48 rounded-full bg-horizon-400/20 blur-3xl"
             aria-hidden
           />
           <div
-            className="pointer-events-none absolute -bottom-20 -left-12 h-52 w-52 rounded-full bg-fresh-400/10 blur-3xl"
+            className="pointer-events-none absolute -bottom-20 -left-12 h-52 w-52 rounded-full bg-horizon-400/10 blur-3xl"
             aria-hidden
           />
 

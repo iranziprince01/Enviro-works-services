@@ -64,7 +64,7 @@ export function MobileNavSection({ item, isActive, onNavigate }: MobileNavSectio
         <div className="border-t border-border px-2 py-2">
           {item.groups?.map((group) => (
             <div key={group.label} className="mb-3 last:mb-0">
-              <p className="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-forest-600 dark:text-fresh-400">
+              <p className="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-forest-600 dark:text-horizon-400">
                 {group.label}
               </p>
               {group.items.map((link) => (
@@ -87,7 +87,7 @@ export function MobileNavSection({ item, isActive, onNavigate }: MobileNavSectio
               className={cn(
                 "block rounded-lg px-3 py-2 text-sm transition-colors hover:bg-muted",
                 link.title.startsWith("View") || link.title.startsWith("All")
-                  ? "font-medium text-forest-600 dark:text-fresh-400"
+                  ? "font-medium text-forest-600 dark:text-horizon-400"
                   : "text-muted-foreground hover:text-foreground",
               )}
             >

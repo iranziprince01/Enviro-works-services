@@ -54,7 +54,7 @@ export function Footer() {
               <Logo variant="footer" className="h-12 sm:h-14" />
             </Link>
             <div className="mt-6">
-              <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-fresh-400">
+              <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-horizon-400">
                 Our promise
               </h3>
               <p className="mt-3 max-w-sm text-sm leading-relaxed text-white/75">
@@ -64,20 +64,20 @@ export function Footer() {
             <div className="mt-6 space-y-3 text-sm text-white/80">
               <a
                 href={siteConfig.phoneHref}
-                className="flex flex-wrap items-center gap-2 break-all transition-colors hover:text-fresh-300 sm:break-normal"
+                className="flex flex-wrap items-center gap-2 break-all transition-colors hover:text-horizon-300 sm:break-normal"
               >
-                <Phone className="h-4 w-4 shrink-0 text-fresh-400" aria-hidden />
+                <Phone className="h-4 w-4 shrink-0 text-horizon-400" aria-hidden />
                 {siteConfig.phone}
               </a>
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="flex flex-wrap items-center gap-2 break-all transition-colors hover:text-fresh-300"
+                className="flex flex-wrap items-center gap-2 break-all transition-colors hover:text-horizon-300"
               >
-                <Mail className="h-4 w-4 shrink-0 text-fresh-400" aria-hidden />
+                <Mail className="h-4 w-4 shrink-0 text-horizon-400" aria-hidden />
                 {siteConfig.email}
               </a>
               <p className="flex items-start gap-2">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-fresh-400" aria-hidden />
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-horizon-400" aria-hidden />
                 <span>
                   {siteConfig.address.street}
                   <br />
@@ -94,7 +94,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-white transition-colors hover:bg-fresh-500/30 hover:text-white"
+                  className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-white transition-colors hover:bg-horizon-500/30 hover:text-white"
                 >
                   <Icon className="h-5 w-5" aria-hidden />
                 </a>
@@ -104,7 +104,7 @@ export function Footer() {
 
           <div className="grid gap-8 sm:grid-cols-2 sm:gap-10 lg:col-span-8 lg:grid-cols-3">
             <div>
-              <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-fresh-400">
+              <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-horizon-400">
                 Services
               </h3>
               <ul className="mt-4 space-y-2.5">
@@ -121,7 +121,7 @@ export function Footer() {
               </ul>
             </div>
             <div>
-              <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-fresh-400">
+              <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-horizon-400">
                 Company
               </h3>
               <ul className="mt-4 space-y-2.5">
@@ -138,7 +138,7 @@ export function Footer() {
               </ul>
             </div>
             <div>
-              <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-fresh-400">
+              <h3 className="font-heading text-sm font-bold uppercase tracking-wider text-horizon-400">
                 Support
               </h3>
               <ul className="mt-4 space-y-2.5">
