@@ -18,12 +18,12 @@ export const siteConfig = {
   homeTitleTagline: "Reliable Property Care",
   description:
     "Book trusted property care in Edmonton and across Alberta. EnviroWorks Services Inc delivers commercial cleaning, residential cleaning, snow removal, landscaping, and facility maintenance with free quotes and reliable service.",
-  url: "https://www.envirohsl.ca",
+  url: "https://www.enviroinc.ca",
   locale: "en_CA",
   phone: "+1 (587) 501-4324",
   phoneHref: "tel:+15875014324",
-  email: "info@envirohsl.ca",
-  careersEmail: "info@envirohsl.ca",
+  email: "info@enviroinc.ca",
+  careersEmail: "info@enviroinc.ca",
   address: {
     street: "10180 101 Street NW, Suite 3400",
     city: "Edmonton",
