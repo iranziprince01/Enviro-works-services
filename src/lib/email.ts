@@ -15,7 +15,7 @@ const brand = {
 function getMailConfig() {
   const user = process.env.SMTP_USER;
   const pass = process.env.SMTP_PASS;
-  const to = process.env.EMAIL_TO ?? "iranziprince1@gmail.com";
+  const to = process.env.EMAIL_TO ?? "enviroworksservicesinc@gmail.com";
 
   if (!user || !pass) {
     throw new Error("Email is not configured. Set SMTP_USER and SMTP_PASS in .env.local");

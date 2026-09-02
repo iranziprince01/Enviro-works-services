@@ -22,8 +22,8 @@ export const siteConfig = {
   locale: "en_CA",
   phone: "+1 (587) 501-4324",
   phoneHref: "tel:+15875014324",
-  email: "info@enviroinc.ca",
-  careersEmail: "info@enviroinc.ca",
+  email: "info@enviroworksinc.ca",
+  careersEmail: "info@enviroworksinc.ca",
   address: {
     street: "10180 101 Street NW, Suite 3400",
     city: "Edmonton",
