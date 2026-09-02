@@ -88,8 +88,8 @@ export const siteConfig = {
     "Wetaskiwin",
   ],
   assets: {
-    logo: "/logo_color.svg",
-    logoFooter: "/logo_white.svg",
+    logo: `${blobBase}/images/logo_color.svg`,
+    logoFooter: `${blobBase}/images/logo_white.svg`,
     favicon: "/favicon.ico",
     icon: "/icon.png",
     appleIcon: "/apple-icon.png",
@@ -104,7 +104,7 @@ export const siteConfig = {
     impactCanadaVideo: `${videoBase}/impact_canada.mp4`,
     chooseVideo: `${videoBase}/choose.mp4`,
   },
-  logoVersion: "6",
+  logoVersion: "7",
   faviconVersion: "3",
   storyVersion: "3",
   heroVideoVersion: "2",
@@ -135,4 +135,12 @@ export function brandedLogoUrl(variant: "default" | "footer" = "default") {
   const path =
     variant === "footer" ? siteConfig.assets.logoFooter : siteConfig.assets.logo;
   return `${path}?v=${siteConfig.logoVersion}`;
+}
+
+export function brandedLogoAbsoluteUrl(variant: "default" | "footer" = "default") {
+  const url = brandedLogoUrl(variant);
+  if (url.startsWith("http://") || url.startsWith("https://")) {
+    return url;
+  }
+  return `${siteConfig.url}${url}`;
 }
