@@ -26,7 +26,7 @@ import { images } from "@/lib/images";
 export const metadata: Metadata = createMetadata({
   title: "About",
   description:
-    "Learn about Enviro Horizon Solutions Ltd, an Edmonton-based property care company built on service, reliability, and excellence across Alberta.",
+    "Learn about EnviroWorks Services Inc, an Edmonton-based property care company built on service, reliability, and excellence across Alberta.",
   path: "/about",
 });
 
@@ -82,7 +82,7 @@ export default function AboutPage() {
                   dependable property care solutions.
                 </p>
                 <p>
-                  At Enviro Horizon, we believe trust is earned through consistency,
+                  At EnviroWorks Services Inc, we believe trust is earned through consistency,
                   professionalism, and delivering results that exceed expectations.{" "}
                   <span className="box-decoration-clone bg-forest-50 font-bold text-forest-600">
                     Every client matters. Every project counts. And every service we provide
@@ -100,7 +100,7 @@ export default function AboutPage() {
 
           <FramedImage
             src={images.story}
-            alt="Enviro Horizon team delivering professional property care"
+            alt="EnviroWorks Services Inc team delivering professional property care"
             priority
             shadowSide="left"
             sizes="(max-width: 1024px) 340px, 500px"
@@ -200,7 +200,7 @@ export default function AboutPage() {
               <div className="relative min-h-0 flex-1 overflow-hidden">
                 <Image
                   src={images.coreValue}
-                  alt="Enviro Horizon team demonstrating our core values in action"
+                  alt="EnviroWorks Services Inc team demonstrating our core values in action"
                   fill
                   className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
@@ -219,7 +219,7 @@ export default function AboutPage() {
               <SectionHeader
                 eyebrow="Service areas"
                 title="Serving cities across Alberta"
-                description="From Edmonton and Calgary to communities province-wide, Enviro Horizon delivers consistent property care for homes and businesses in every city in Alberta."
+                description="From Edmonton and Calgary to communities province-wide, EnviroWorks Services Inc delivers consistent property care for homes and businesses in every city in Alberta."
                 align="left"
                 spacing="tight"
                 className="max-w-none"
@@ -279,7 +279,7 @@ export default function AboutPage() {
       <CtaSection
         variant="muted"
         buttonLabel="Book Service"
-        title="Ready to experience Enviro Horizon excellence?"
+        title="Ready to experience EnviroWorks Services Inc excellence?"
         description="Join homeowners and businesses across Alberta who trust us for reliable, professional property care."
       />
     </>

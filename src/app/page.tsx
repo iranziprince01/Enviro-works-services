@@ -68,7 +68,7 @@ export default function HomePage() {
           <SectionHeader
             eyebrow="What we do"
             title="Complete property solutions for homes and businesses across Alberta"
-            description="From Edmonton offices to residential homes, Enviro Horizon is the one team for cleaning, seasonal care, and year-round property maintenance so you can book with confidence."
+            description="From Edmonton offices to residential homes, EnviroWorks Services Inc is the one team for cleaning, seasonal care, and year-round property maintenance so you can book with confidence."
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
@@ -131,7 +131,7 @@ export default function HomePage() {
               Results that speak for themselves
             </p>
             <h2 className="mt-3 font-heading text-[1.65rem] font-bold tracking-tight text-white sm:text-3xl md:text-4xl">
-              Alberta property owners choose Enviro Horizon
+              Alberta property owners choose EnviroWorks Services Inc
             </h2>
           </div>
           <div className="grid gap-8 sm:grid-cols-2 sm:gap-10 lg:grid-cols-4 lg:gap-12">
@@ -192,7 +192,7 @@ export default function HomePage() {
         <Container>
           <SectionHeader
             eyebrow="Client reviews"
-            title="Property owners across Alberta trust Enviro Horizon"
+            title="Property owners across Alberta trust EnviroWorks Services Inc"
             description="Feedback from facility managers, business owners, and homeowners in Edmonton, St. Albert, Sherwood Park, and beyond."
           />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">

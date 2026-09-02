@@ -14,7 +14,7 @@ import { images } from "@/lib/images";
 export const metadata: Metadata = createMetadata({
   title: "Impact",
   description:
-    "Enviro Horizon Solutions Ltd is committed to building stronger communities through employment opportunities, newcomer support, and meaningful contribution across Alberta.",
+    "EnviroWorks Services Inc is committed to building stronger communities through employment opportunities, newcomer support, and meaningful contribution across Alberta.",
   path: "/impact",
 });
 
@@ -34,7 +34,7 @@ export default function ImpactPage() {
             Building Business While Building Community
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/85 sm:mt-6 sm:text-lg">
-            At Enviro Horizon Solutions Ltd, we believe business should do more than generate revenue.
+            At EnviroWorks Services Inc, we believe business should do more than generate revenue.
             A business should create opportunity.
           </p>
         </Container>

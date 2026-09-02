@@ -92,7 +92,7 @@ export const futurePositions = [
   "Field Supervisors",
 ] as const;
 
-export const whyJoinEnviroHorizon = [
+export const whyJoinEnviroWorks = [
   "Growth opportunities in a fast-growing company",
   "Professional and supportive work environment",
   "Ongoing training and skill development",
@@ -105,7 +105,7 @@ export const footerPromise =
   "We are committed to delivering dependable service, professional care, and building stronger communities through work that makes everyday spaces cleaner, safer, and better for everyone.";
 
 export const landAcknowledgementLines = [
-  "Enviro Horizon Solutions Ltd respectfully acknowledges that we operate on",
+  "EnviroWorks Services Inc respectfully acknowledges that we operate on",
   "Treaty 6 Territory, the traditional and ancestral lands of First Nations and Métis peoples.",
 ] as const;
 

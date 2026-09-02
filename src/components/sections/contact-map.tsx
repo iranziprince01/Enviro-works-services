@@ -20,7 +20,7 @@ export function ContactMap({ className }: { className?: string }) {
       )}
     >
       <iframe
-        title={`Enviro Horizon office map, ${street}, ${city}`}
+        title={`EnviroWorks Services Inc office map, ${street}, ${city}`}
         src={getMapEmbedUrl()}
         className="min-h-0 w-full flex-1 border-0"
         loading="lazy"

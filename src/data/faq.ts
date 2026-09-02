@@ -7,7 +7,7 @@ export type FaqItem = {
 export const faqs: FaqItem[] = [
   {
     category: "General",
-    question: "What areas does Enviro Horizon Solutions serve?",
+    question: "What areas does EnviroWorks Services Inc serve?",
     answer:
       "We serve Edmonton, Sherwood Park, St. Albert, Beaumont, Leduc, and surrounding communities across the Edmonton metropolitan region.",
   },
@@ -15,7 +15,7 @@ export const faqs: FaqItem[] = [
     category: "General",
     question: "Are you licensed, bonded, and insured?",
     answer:
-      "Yes. Enviro Horizon Solutions Ltd carries full liability insurance, bonding, and WCB coverage. Certificates are available upon request for commercial and property management clients.",
+      "Yes. EnviroWorks Services Inc carries full liability insurance, bonding, and WCB coverage. Certificates are available upon request for commercial and property management clients.",
   },
   {
     category: "General",

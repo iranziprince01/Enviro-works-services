@@ -68,7 +68,7 @@ export default async function BlogPostPage({ params }: Props) {
             <div className="prose prose-lg max-w-none text-muted-foreground dark:prose-invert">
               <p className="text-lg leading-relaxed">{post.content}</p>
               <p className="leading-relaxed">
-                At Enviro Horizon Solutions, we help Edmonton property owners and facility managers
+                At EnviroWorks Services Inc, we help Edmonton property owners and facility managers
                 maintain exceptional standards year-round. Whether you need commercial cleaning,
                 residential care, landscaping, or snow removal, our team delivers results you can trust.
               </p>

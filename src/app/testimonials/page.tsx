@@ -15,7 +15,7 @@ import { Badge } from "@/components/ui/badge";
 export const metadata: Metadata = createMetadata({
   title: "Testimonials",
   description:
-    "Read reviews from Edmonton property managers, business owners, and homeowners who trust Enviro Horizon for cleaning, landscaping, and snow removal.",
+    "Read reviews from Edmonton property managers, business owners, and homeowners who trust EnviroWorks Services Inc for cleaning, landscaping, and snow removal.",
   path: "/testimonials",
 });
 
@@ -65,7 +65,7 @@ export default function TestimonialsPage() {
       </Section>
 
       <CtaSection
-        title="Ready to experience the Enviro Horizon difference?"
+        title="Ready to experience the EnviroWorks Services Inc difference?"
         description="Book your free quote and see why Alberta property owners recommend us."
         buttonLabel="Book Service"
       />

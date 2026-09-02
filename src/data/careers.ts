@@ -61,7 +61,7 @@ export const careers: Career[] = [
     location: "Edmonton, AB (Hybrid)",
     type: "Full-time",
     description:
-      "Be the voice of Enviro Horizon for property managers and facility directors. Manage accounts, scheduling, and client communications.",
+      "Be the voice of EnviroWorks Services Inc for property managers and facility directors. Manage accounts, scheduling, and client communications.",
     requirements: [
       "Excellent written and verbal communication",
       "Customer service or account management experience",

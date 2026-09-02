@@ -1,6 +1,6 @@
-# Enviro Horizon Solutions Ltd
+# EnviroWorks Services Inc
 
-Production-ready marketing website for Enviro Horizon Solutions Ltd — a premium property maintenance company serving Edmonton and surrounding Alberta communities.
+Production-ready marketing website for EnviroWorks Services Inc — a premium property maintenance company serving Edmonton and surrounding Alberta communities.
 
 ## Tech Stack
 
@@ -56,4 +56,4 @@ No environment variables required for the marketing site. Connect quote and cont
 
 ## License
 
-Proprietary — Enviro Horizon Solutions Ltd.
+Proprietary — EnviroWorks Services Inc.

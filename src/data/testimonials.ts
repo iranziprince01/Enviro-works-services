@@ -17,7 +17,7 @@ export const testimonials: Testimonial[] = [
     company: "Northgate Commercial",
     location: "Edmonton, AB",
     quote:
-      "Enviro Horizon transformed how we manage three office towers. Their janitorial team is punctual, thorough, and our tenant satisfaction scores have never been higher.",
+      "EnviroWorks Services Inc transformed how we manage three office towers. Their janitorial team is punctual, thorough, and our tenant satisfaction scores have never been higher.",
     rating: 5,
     service: "Janitorial Services",
   },
@@ -38,7 +38,7 @@ export const testimonials: Testimonial[] = [
     company: "Riverbend Medical Centre",
     location: "Edmonton, AB",
     quote:
-      "Healthcare cleaning demands precision. Enviro Horizon exceeded our infection-control expectations and adapted quickly to our scheduling needs.",
+      "Healthcare cleaning demands precision. EnviroWorks Services Inc exceeded our infection-control expectations and adapted quickly to our scheduling needs.",
     rating: 5,
     service: "Commercial Cleaning",
   },
@@ -59,7 +59,7 @@ export const testimonials: Testimonial[] = [
     role: "Condo Board President",
     location: "Beaumont, AB",
     quote:
-      "Snow removal used to be a nightmare for our residents. Enviro Horizon's 24/7 response and clear communication have made winters stress-free.",
+      "Snow removal used to be a nightmare for our residents. EnviroWorks Services Inc's 24/7 response and clear communication have made winters stress-free.",
     rating: 5,
     service: "Snow Removal",
   },

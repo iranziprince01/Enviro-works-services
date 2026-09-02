@@ -14,7 +14,7 @@ import { Badge } from "@/components/ui/badge";
 export const metadata: Metadata = createMetadata({
   title: "Blog",
   description:
-    "Property maintenance tips, seasonal advice, and industry insights from Enviro Horizon Solutions, Edmonton's property care experts.",
+    "Property maintenance tips, seasonal advice, and industry insights from EnviroWorks Services Inc, Edmonton's property care experts.",
   path: "/blog",
 });
 
@@ -58,7 +58,7 @@ export default function BlogPage() {
 
       <CtaSection
         title="Need help maintaining your property?"
-        description="Turn expert advice into reliable service. Book Enviro Horizon for cleaning, maintenance, and seasonal care across Alberta."
+        description="Turn expert advice into reliable service. Book EnviroWorks Services Inc for cleaning, maintenance, and seasonal care across Alberta."
         buttonLabel="Book Service"
       />
     </>

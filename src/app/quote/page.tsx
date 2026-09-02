@@ -13,7 +13,7 @@ import { Phone, Mail, Clock } from "lucide-react";
 export const metadata: Metadata = createMetadata({
   title: "Book Service",
   description:
-    "Request professional property services from Enviro Horizon Solutions Ltd in Edmonton. Book cleaning, maintenance, landscaping, or snow removal in minutes.",
+    "Request professional property services from EnviroWorks Services Inc in Edmonton. Book cleaning, maintenance, landscaping, or snow removal in minutes.",
   path: "/quote",
   keywords: ["Cleaning Company Edmonton", "Property Services Edmonton"],
 });

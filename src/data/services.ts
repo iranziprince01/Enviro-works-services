@@ -51,7 +51,7 @@ export const services: Service[] = [
       "We provide professional cleaning services with customized daily, weekly, and contract-based cleaning plans. Our dependable teams help businesses maintain clean, safe, and professionally managed environments.",
     overviewParagraphs: [
       "A clean workplace supports employee health, productivity, and the impression you leave on clients and visitors. Offices, retail spaces, and shared commercial buildings need consistent care for restrooms, floors, and high-touch surfaces.",
-      "Enviro Horizon provides commercial cleaning across Edmonton and surrounding Alberta for offices, retail, restaurants, clinics, schools, warehouses, and multi-tenant buildings. We offer daily, weekly, and contract-based plans built around your layout and hours.",
+      "EnviroWorks Services Inc provides commercial cleaning across Edmonton and surrounding Alberta for offices, retail, restaurants, clinics, schools, warehouses, and multi-tenant buildings. We offer daily, weekly, and contract-based plans built around your layout and hours.",
       "Our teams follow structured checklists for restrooms, workstations, floors, break rooms, and common areas. After-hours scheduling, healthcare and food-service protocols, and clear site communication help keep every visit consistent.",
     ],
     benefits: [
@@ -133,7 +133,7 @@ export const services: Service[] = [
       "Because every home deserves exceptional care. We provide residential cleaning services that help homeowners maintain healthier, stress-free living spaces with flexible plans tailored to your needs.",
     overviewParagraphs: [
       "A clean home supports your family's health, comfort, and peace of mind. Kitchens, bathrooms, bedrooms, and living areas need regular attention to stay fresh, hygienic, and welcoming for everyone who walks through the door.",
-      "Enviro Horizon provides residential cleaning across Edmonton and surrounding Alberta for homeowners, busy professionals, families, and rental property owners. We offer deep cleans, recurring house cleaning, move-in and move-out service, and flexible schedules built around your routine.",
+      "EnviroWorks Services Inc provides residential cleaning across Edmonton and surrounding Alberta for homeowners, busy professionals, families, and rental property owners. We offer deep cleans, recurring house cleaning, move-in and move-out service, and flexible schedules built around your routine.",
       "Our teams follow detailed room-by-room checklists with background-checked, uniformed cleaners. Eco-friendly product options, same-day availability, and a satisfaction guarantee on every visit help keep your home consistently guest-ready.",
     ],
     benefits: [
@@ -207,10 +207,10 @@ export const services: Service[] = [
     description:
       "Reliable janitorial services for schools, offices, and multi-site portfolios across the Edmonton metro area.",
     overview:
-      "Our janitorial programs combine nightly maintenance, day porter support, and rapid response for spills and emergencies. Property managers trust Enviro Horizon for dependable coverage, clear reporting, and crews who represent your brand professionally.",
+      "Our janitorial programs combine nightly maintenance, day porter support, and rapid response for spills and emergencies. Property managers trust EnviroWorks Services Inc for dependable coverage, clear reporting, and crews who represent your brand professionally.",
     overviewParagraphs: [
       "Well-maintained facilities reflect your organization's standards and keep occupants safe. Schools, offices, and multi-tenant buildings need reliable daily care for restrooms, common areas, and high-traffic zones throughout operating hours.",
-      "Enviro Horizon provides janitorial services across Edmonton and surrounding Alberta for schools, corporate campuses, apartment complexes, municipal facilities, and shopping centres. We offer nightly cleaning, day porter support, and scalable programs for single or multi-site portfolios.",
+      "EnviroWorks Services Inc provides janitorial services across Edmonton and surrounding Alberta for schools, corporate campuses, apartment complexes, municipal facilities, and shopping centres. We offer nightly cleaning, day porter support, and scalable programs for single or multi-site portfolios.",
       "Our crews handle disinfection, supply restocking, elevator and stairwell care, and emergency spill response with clear incident reporting. Dedicated staffing plans, supervised launch weeks, and monthly performance reviews keep every site consistently maintained.",
     ],
     benefits: [
@@ -282,7 +282,7 @@ export const services: Service[] = [
       "We provide dependable snow removal and winter maintenance when Alberta weather becomes unpredictable. Our teams help keep residential and commercial properties safe and accessible throughout the winter season.",
     overviewParagraphs: [
       "Winter weather in Alberta creates safety risks, access problems, and liability concerns for property owners. Driveways, parking lots, sidewalks, and entrances must be cleared promptly to protect visitors, tenants, and staff throughout the season.",
-      "Enviro Horizon provides snow removal and winter maintenance across Edmonton and surrounding Alberta for retail and office properties, condo boards, homeowners, industrial sites, and schools. We offer residential clearing, commercial plowing, and seasonal contracts with priority response.",
+      "EnviroWorks Services Inc provides snow removal and winter maintenance across Edmonton and surrounding Alberta for retail and office properties, condo boards, homeowners, industrial sites, and schools. We offer residential clearing, commercial plowing, and seasonal contracts with priority response.",
       "Our teams monitor storms around the clock and dispatch based on agreed trigger depths. Ice control, sanding, parking lot clearing, and completion verification help keep your property safe and accessible after every snowfall.",
     ],
     benefits: [
@@ -354,7 +354,7 @@ export const services: Service[] = [
       "We provide landscaping and lawn care services that help outdoor spaces remain beautiful and professionally maintained throughout the year.",
     overviewParagraphs: [
       "Your property's exterior is the first thing visitors, tenants, and customers notice. Well-kept lawns, garden beds, and green spaces signal professionalism and care while protecting the long-term value of your investment.",
-      "Enviro Horizon provides landscaping services across Edmonton and surrounding Alberta for homeowners, HOAs, office parks, retail centres, and new developments. We offer design consultation, seasonal planting, bed maintenance, and year-round landscape management.",
+      "EnviroWorks Services Inc provides landscaping services across Edmonton and surrounding Alberta for homeowners, HOAs, office parks, retail centres, and new developments. We offer design consultation, seasonal planting, bed maintenance, and year-round landscape management.",
       "Our crews handle mowing, edging, mulching, weed control, and spring and fall cleanups with plans tailored to Alberta's growing seasons. Integrated programs that combine landscaping with snow and lawn care simplify property management under one trusted provider.",
     ],
     benefits: [
@@ -427,7 +427,7 @@ export const services: Service[] = [
       "A well-maintained lawn signals professionalism and pride. Our lawn care teams deliver precise mowing, edging, aeration, and fertilization schedules calibrated for Alberta's climate, keeping grass thick, green, and weed-free.",
     overviewParagraphs: [
       "A healthy lawn improves curb appeal, supports property value, and creates an inviting outdoor space for families and businesses. Turf needs consistent mowing, edging, and seasonal care to thrive in Alberta's climate.",
-      "Enviro Horizon provides lawn care across Edmonton and surrounding Alberta for residential homeowners, rental properties, commercial office parks, schools, and strata communities. We offer weekly or bi-weekly mowing, fertilization, and weed management on fixed schedules.",
+      "EnviroWorks Services Inc provides lawn care across Edmonton and surrounding Alberta for residential homeowners, rental properties, commercial office parks, schools, and strata communities. We offer weekly or bi-weekly mowing, fertilization, and weed management on fixed schedules.",
       "Our crews evaluate turf health, build seasonal care calendars, and adjust programs for spring growth, summer stress, and fall preparation. Aeration, overseeding, and bundled landscaping savings help keep your lawn thick, green, and weed-free year after year.",
     ],
     benefits: [
@@ -499,7 +499,7 @@ export const services: Service[] = [
       "We provide professional pressure washing for driveways, sidewalks, building exteriors, decks, patios, parking lots, and commercial storefronts affected by dirt buildup.",
     overviewParagraphs: [
       "Built-up dirt, mould, and grime on exterior surfaces make properties look neglected and can accelerate wear over time. Driveways, sidewalks, building facades, and decks benefit from periodic deep cleaning to restore appearance and protect materials.",
-      "Enviro Horizon provides pressure washing across Edmonton and surrounding Alberta for homeowners, property managers, restaurants, storefronts, parkade operators, and construction companies. We clean driveways, sidewalks, exteriors, decks, patios, and parking lots.",
+      "EnviroWorks Services Inc provides pressure washing across Edmonton and surrounding Alberta for homeowners, property managers, restaurants, storefronts, parkade operators, and construction companies. We clean driveways, sidewalks, exteriors, decks, patios, and parking lots.",
       "Our teams inspect each surface, select the right pressure and method, and use soft-wash techniques on delicate materials. Eco-conscious solutions, area preparation, and before-and-after documentation ensure thorough results without damage to your property.",
     ],
     benefits: [
@@ -572,7 +572,7 @@ export const services: Service[] = [
       "Construction projects leave behind dust and debris. We handle final construction cleanup, debris removal, and occupancy-ready finishing so new spaces are ready for use.",
     overviewParagraphs: [
       "Construction and renovation projects leave behind dust, debris, and fine particles that standard cleaning cannot address. New and renovated spaces need a thorough final clean before occupancy, inspection, or handover to tenants and owners.",
-      "Enviro Horizon provides post-construction cleaning across Edmonton and surrounding Alberta for general contractors, developers, renovation contractors, property managers, and homeowners. We handle debris removal, dust control, and occupancy-ready finishing.",
+      "EnviroWorks Services Inc provides post-construction cleaning across Edmonton and surrounding Alberta for general contractors, developers, renovation contractors, property managers, and homeowners. We handle debris removal, dust control, and occupancy-ready finishing.",
       "Our teams follow multi-phase protocols from rough clean through detail and touch-up passes. Window, fixture, and floor finishing, safety-focused debris handling, and fast turnaround align with your project timeline and sign-off requirements.",
     ],
     benefits: [
@@ -643,7 +643,7 @@ export const services: Service[] = [
       "We provide property maintenance services for residential and commercial properties, protecting property value while reducing operational stress through dependable, year-round support.",
     overviewParagraphs: [
       "Managing a property means coordinating cleaning, grounds care, snow removal, and facility upkeep across every season. Gaps in maintenance lead to higher costs, tenant complaints, and preventable wear on your building and grounds.",
-      "Enviro Horizon provides property maintenance across Edmonton and surrounding Alberta for property management companies, facility managers, landlords, commercial building owners, and strata councils. We bundle exterior care, facility upkeep, and seasonal support under one provider.",
+      "EnviroWorks Services Inc provides property maintenance across Edmonton and surrounding Alberta for property management companies, facility managers, landlords, commercial building owners, and strata councils. We bundle exterior care, facility upkeep, and seasonal support under one provider.",
       "Our account managers audit each property, build integrated service plans, and coordinate year-round execution from summer grounds care to winter snow operations. Simplified billing, proactive scheduling, and reduced vendor overhead protect your property value long term.",
     ],
     benefits: [

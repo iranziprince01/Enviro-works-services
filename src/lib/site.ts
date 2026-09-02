@@ -11,13 +11,13 @@ const videoBase = `${blobBase}/videos`;
 
 export const siteConfig = {
   mediaBaseUrl: blobBase,
-  name: "Enviro Horizon Solutions Ltd",
-  brandName: "Enviro Horizon Solutions",
-  shortName: "Enviro Horizon",
+  name: "EnviroWorks Services Inc",
+  brandName: "EnviroWorks Services Inc",
+  shortName: "EnviroWorks Services Inc",
   tagline: "Reliable Property Care · Trusted Service · Stronger Communities",
   homeTitleTagline: "Reliable Property Care",
   description:
-    "Book trusted property care in Edmonton and across Alberta. Enviro Horizon Solutions delivers commercial cleaning, residential cleaning, snow removal, landscaping, and facility maintenance with free quotes and reliable service.",
+    "Book trusted property care in Edmonton and across Alberta. EnviroWorks Services Inc delivers commercial cleaning, residential cleaning, snow removal, landscaping, and facility maintenance with free quotes and reliable service.",
   url: "https://www.envirohsl.ca",
   locale: "en_CA",
   phone: "+1 (587) 501-4324",

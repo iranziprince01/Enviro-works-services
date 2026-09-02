@@ -15,7 +15,7 @@ type ServiceBenefitsSectionProps = {
 };
 
 export function ServiceBenefitsSection({
-  title = "Why Choose Enviro Horizon",
+  title = "Why Choose EnviroWorks Services Inc",
   benefits,
   image,
   imageAlt,

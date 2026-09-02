@@ -3,7 +3,7 @@ import { FramedImage } from "@/components/layout/framed-image";
 import { FramedVideo } from "@/components/layout/framed-video";
 import { CheckCircle2, Mail } from "lucide-react";
 import { createMetadata } from "@/lib/seo";
-import { futurePositions, whyJoinEnviroHorizon } from "@/data/company";
+import { futurePositions, whyJoinEnviroWorks } from "@/data/company";
 import { siteConfig } from "@/lib/site";
 import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
@@ -17,7 +17,7 @@ import { images } from "@/lib/images";
 export const metadata: Metadata = createMetadata({
   title: "Careers",
   description:
-    "Build your future with Enviro Horizon Solutions Ltd. Join our growing Edmonton team in cleaning, landscaping, snow removal, and property maintenance.",
+    "Build your future with EnviroWorks Services Inc. Join our growing Edmonton team in cleaning, landscaping, snow removal, and property maintenance.",
   path: "/careers",
 });
 
@@ -34,10 +34,10 @@ export default function CareersPage() {
         <Container className="relative">
           <Breadcrumbs items={[{ label: "Careers" }]} variant="light" />
           <h1 className="page-title mt-4">
-            Build Your Future With Enviro Horizon Solutions
+            Build Your Future With EnviroWorks Services Inc
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/85 sm:mt-6 sm:text-lg">
-            At Enviro Horizon Solutions Ltd, we believe great companies are built by great people.
+            At EnviroWorks Services Inc, we believe great companies are built by great people.
           </p>
         </Container>
       </section>
@@ -46,7 +46,7 @@ export default function CareersPage() {
         <Container className="split-section overflow-x-clip lg:grid-cols-[min(46%,480px)_1fr]">
           <FramedImage
             src={images.career}
-            alt="Enviro Horizon team member at work"
+            alt="EnviroWorks Services Inc team member at work"
             shadowSide="right"
             maxWidthClass="max-w-[min(100%,380px)] sm:max-w-[380px]"
             sizes="(max-width: 1024px) 380px, 480px"
@@ -105,13 +105,13 @@ export default function CareersPage() {
         <Container className="split-section overflow-x-clip lg:grid-cols-[minmax(0,32rem)_1fr] lg:justify-between">
           <div className="flex w-full min-w-0 max-w-md flex-col justify-center lg:max-w-lg">
             <SectionHeader
-              title="Why join Enviro Horizon?"
+              title="Why join EnviroWorks Services Inc?"
               align="left"
               spacing="tight"
               className="max-w-none"
             />
             <ul className="content-stack flex flex-col gap-3">
-              {whyJoinEnviroHorizon.map((item) => (
+              {whyJoinEnviroWorks.map((item) => (
                 <li key={item}>
                   <div className="flex items-center gap-3 rounded-lg border border-border/80 bg-card px-4 py-3.5">
                     <CheckCircle2

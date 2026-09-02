@@ -14,7 +14,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export const metadata: Metadata = createMetadata({
   title: "Industries",
   description:
-    "Enviro Horizon serves offices, healthcare, retail, restaurants, schools, warehouses, property management, and municipal organizations across Edmonton.",
+    "EnviroWorks Services Inc serves offices, healthcare, retail, restaurants, schools, warehouses, property management, and municipal organizations across Edmonton.",
   path: "/industries",
 });
 

@@ -22,7 +22,7 @@ export function IntroSection() {
         >
           <FramedImage
             src={images.intro}
-            alt="Professional property care by Enviro Horizon Solutions"
+            alt="Professional property care by EnviroWorks Services Inc"
             priority
             shadowSide="right"
             sizes="(max-width: 1024px) 340px, 400px"
