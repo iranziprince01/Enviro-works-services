@@ -18,7 +18,7 @@ export const siteConfig = {
   homeTitleTagline: "Reliable Property Care",
   description:
     "EnviroWorks Services Inc provides commercial and residential cleaning, snow removal, landscaping, and facility maintenance in Edmonton and across Alberta. Free quotes.",
-  url: "https://www.enviroinc.ca",
+  url: "https://www.enviroworksinc.ca",
   locale: "en_CA",
   language: "en-CA",
   phone: "+1 (587) 501-4324",
