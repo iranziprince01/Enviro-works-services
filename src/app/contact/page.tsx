@@ -11,6 +11,8 @@ import { SectionCta } from "@/components/layout/section-cta";
 import { ContactForm } from "@/components/forms/contact-form";
 import { ContactMap } from "@/components/sections/contact-map";
 import { Card, CardContent } from "@/components/ui/card";
+import { JsonLd } from "@/components/seo/json-ld";
+import { breadcrumbSchema, contactPageSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = createMetadata({
   title: "Contact",
@@ -22,6 +24,15 @@ export const metadata: Metadata = createMetadata({
 export default function ContactPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          contactPageSchema(),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Contact", path: "/contact" },
+          ]),
+        ]}
+      />
       <section className="page-hero relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <Image

@@ -9,6 +9,8 @@ import { Breadcrumbs } from "@/components/layout/breadcrumbs";
 import { CtaSection } from "@/components/sections/cta-section";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { JsonLd } from "@/components/seo/json-ld";
+import { breadcrumbSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = createMetadata({
   title: "Pricing",
@@ -27,8 +29,13 @@ const pricingFactors = [
 ];
 
 export default function PricingPage() {
+  const jsonLd = breadcrumbSchema([
+    { name: "Home", path: "/" },
+    { name: "Pricing", path: "/pricing" },
+  ]);
   return (
     <>
+      <JsonLd data={jsonLd} />
       <section className="page-hero bg-forest-600">
         <Container>
           <Breadcrumbs items={[{ label: "Pricing" }]} />

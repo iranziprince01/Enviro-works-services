@@ -10,6 +10,8 @@ import { SectionCta } from "@/components/layout/section-cta";
 import { CtaSection } from "@/components/sections/cta-section";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { JsonLd } from "@/components/seo/json-ld";
+import { breadcrumbSchema, itemListSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = createMetadata({
   title: "Blog",
@@ -21,6 +23,21 @@ export const metadata: Metadata = createMetadata({
 export default function BlogPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Blog", path: "/blog" },
+          ]),
+          itemListSchema(
+            "EnviroWorks Services Inc blog",
+            blogPosts.map((post) => ({
+              name: post.title,
+              path: `/blog/${post.slug}`,
+            })),
+          ),
+        ]}
+      />
       <section className="page-hero bg-forest-600">
         <Container>
           <Breadcrumbs items={[{ label: "Blog" }]} />

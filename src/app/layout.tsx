@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Lato, Nunito } from "next/font/google";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { Header } from "@/components/layout/header";
@@ -6,8 +6,8 @@ import { Footer } from "@/components/layout/footer";
 import { BackToTop } from "@/components/layout/back-to-top";
 import { JsonLd } from "@/components/seo/json-ld";
 import { Toaster } from "@/components/ui/sonner";
-import { createMetadata } from "@/lib/seo";
-import { localBusinessSchema } from "@/lib/schemas";
+import { createRootMetadata } from "@/lib/seo";
+import { siteGraph } from "@/lib/schemas";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
@@ -25,11 +25,16 @@ const lato = Lato({
   weight: ["400", "700"],
 });
 
-export const metadata: Metadata = createMetadata({
-  title: siteConfig.name,
-  description: siteConfig.description,
-  path: "/",
-});
+export const metadata: Metadata = createRootMetadata();
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#2a5a3c" },
+    { media: "(prefers-color-scheme: dark)", color: "#163224" },
+  ],
+  width: "device-width",
+  initialScale: 1,
+};
 
 export default function RootLayout({
   children,
@@ -74,7 +79,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <ThemeProvider>
-          <JsonLd data={localBusinessSchema()} />
+          <JsonLd data={siteGraph()} />
           <a
             href="#main-content"
             className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-lg focus:bg-forest-600 focus:px-4 focus:py-2 focus:text-white"

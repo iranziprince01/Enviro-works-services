@@ -9,6 +9,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { siteConfig } from "@/lib/site";
 import { images } from "@/lib/images";
 import { Phone, Mail, Clock } from "lucide-react";
+import { JsonLd } from "@/components/seo/json-ld";
+import { breadcrumbSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = createMetadata({
   title: "Book Service",
@@ -21,6 +23,12 @@ export const metadata: Metadata = createMetadata({
 export default function QuotePage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Book Service", path: "/quote" },
+        ])}
+      />
       <section className="page-hero relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <Image

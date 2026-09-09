@@ -10,6 +10,8 @@ import { Breadcrumbs } from "@/components/layout/breadcrumbs";
 import { SectionCta } from "@/components/layout/section-cta";
 import { CtaSection } from "@/components/sections/cta-section";
 import { Card, CardContent } from "@/components/ui/card";
+import { JsonLd } from "@/components/seo/json-ld";
+import { breadcrumbSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = createMetadata({
   title: "Industries",
@@ -21,6 +23,12 @@ export const metadata: Metadata = createMetadata({
 export default function IndustriesPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Industries", path: "/industries" },
+        ])}
+      />
       <section className="page-hero bg-forest-600">
         <Container>
           <Breadcrumbs items={[{ label: "Industries" }]} />

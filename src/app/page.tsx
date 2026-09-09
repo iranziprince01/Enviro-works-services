@@ -16,6 +16,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { SectionCta } from "@/components/layout/section-cta";
 import { testimonials, stats } from "@/data/testimonials";
 import { images } from "@/lib/images";
+import { JsonLd } from "@/components/seo/json-ld";
+import { itemListSchema } from "@/lib/schemas";
+import { services } from "@/data/services";
 
 const processSteps = [
   {
@@ -51,6 +54,15 @@ const processSteps = [
 export default function HomePage() {
   return (
     <>
+      <JsonLd
+        data={itemListSchema(
+          "EnviroWorks Services Inc property care services",
+          services.map((service) => ({
+            name: service.shortTitle,
+            path: `/services/${service.slug}`,
+          })),
+        )}
+      />
       <HeroSection />
 
       <ServicesMarquee />

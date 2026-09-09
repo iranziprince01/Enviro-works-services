@@ -8,6 +8,8 @@ import { SectionCta } from "@/components/layout/section-cta";
 import { ServicesPageCard } from "@/components/sections/services-page-card";
 import { CtaSection } from "@/components/sections/cta-section";
 import { serviceListingCards } from "@/data/services";
+import { JsonLd } from "@/components/seo/json-ld";
+import { breadcrumbSchema, itemListSchema } from "@/lib/schemas";
 import { images } from "@/lib/images";
 
 export const metadata: Metadata = createMetadata({
@@ -21,6 +23,21 @@ export const metadata: Metadata = createMetadata({
 export default function ServicesPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Services", path: "/services" },
+          ]),
+          itemListSchema(
+            "Property care services in Edmonton",
+            serviceListingCards.map((service) => ({
+              name: service.title,
+              path: `/services/${service.slug}`,
+            })),
+          ),
+        ]}
+      />
       <section className="page-hero relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <Image

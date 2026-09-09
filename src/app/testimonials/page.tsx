@@ -3,7 +3,7 @@ import { Star } from "lucide-react";
 import { createMetadata } from "@/lib/seo";
 import { testimonials } from "@/data/testimonials";
 import { JsonLd } from "@/components/seo/json-ld";
-import { reviewSchema } from "@/lib/schemas";
+import { breadcrumbSchema, reviewSchema } from "@/lib/schemas";
 import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 import { Breadcrumbs } from "@/components/layout/breadcrumbs";
@@ -22,7 +22,15 @@ export const metadata: Metadata = createMetadata({
 export default function TestimonialsPage() {
   return (
     <>
-      <JsonLd data={reviewSchema(testimonials)} />
+      <JsonLd
+        data={[
+          reviewSchema(testimonials),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Testimonials", path: "/testimonials" },
+          ]),
+        ]}
+      />
 
       <section className="page-hero bg-forest-600">
         <Container>

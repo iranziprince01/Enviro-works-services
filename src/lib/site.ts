@@ -17,9 +17,10 @@ export const siteConfig = {
   tagline: "Reliable Property Care · Trusted Service · Stronger Communities",
   homeTitleTagline: "Reliable Property Care",
   description:
-    "Book trusted property care in Edmonton and across Alberta. EnviroWorks Services Inc delivers commercial cleaning, residential cleaning, snow removal, landscaping, and facility maintenance with free quotes and reliable service.",
+    "EnviroWorks Services Inc provides commercial and residential cleaning, snow removal, landscaping, and facility maintenance in Edmonton and across Alberta. Free quotes.",
   url: "https://www.enviroinc.ca",
   locale: "en_CA",
+  language: "en-CA",
   phone: "+1 (587) 501-4324",
   phoneHref: "tel:+15875014324",
   email: "info@enviroworksinc.ca",
@@ -40,6 +41,18 @@ export const siteConfig = {
     { days: "Monday – Friday", hours: "8:00 AM – 6:00 PM" },
     { days: "Saturday", hours: "9:00 AM – 4:00 PM" },
     { days: "Sunday", hours: "Closed" },
+  ],
+  openingHours: [
+    {
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "18:00",
+    },
+    {
+      dayOfWeek: "Saturday",
+      opens: "09:00",
+      closes: "16:00",
+    },
   ],
   social: {
     facebook:
@@ -138,9 +151,49 @@ export function brandedLogoUrl(variant: "default" | "footer" = "default") {
 }
 
 export function brandedLogoAbsoluteUrl(variant: "default" | "footer" = "default") {
-  const url = brandedLogoUrl(variant);
-  if (url.startsWith("http://") || url.startsWith("https://")) {
-    return url;
+  return toAbsoluteUrl(brandedLogoUrl(variant));
+}
+
+export function toAbsoluteUrl(pathOrUrl: string) {
+  if (pathOrUrl.startsWith("http://") || pathOrUrl.startsWith("https://")) {
+    return pathOrUrl;
   }
-  return `${siteConfig.url}${url}`;
+  const path = pathOrUrl.startsWith("/") ? pathOrUrl : `/${pathOrUrl}`;
+  return `${siteConfig.url}${path}`;
+}
+
+export function canonicalUrl(path = "") {
+  if (!path || path === "/") {
+    return siteConfig.url;
+  }
+  return `${siteConfig.url}${path.startsWith("/") ? path : `/${path}`}`;
+}
+
+export function socialProfileUrls() {
+  return Object.values(siteConfig.social)
+    .filter(Boolean)
+    .map((url) => {
+      try {
+        const parsed = new URL(url);
+        parsed.search = "";
+        parsed.hash = "";
+        return parsed.toString();
+      } catch {
+        return url;
+      }
+    });
+}
+
+export function googleSiteVerification() {
+  return (
+    process.env.GOOGLE_SITE_VERIFICATION ??
+    process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+  );
+}
+
+export function bingSiteVerification() {
+  return (
+    process.env.BING_SITE_VERIFICATION ??
+    process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+  );
 }

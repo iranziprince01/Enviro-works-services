@@ -19,6 +19,8 @@ import {
   mission,
   vision,
 } from "@/data/company";
+import { JsonLd } from "@/components/seo/json-ld";
+import { breadcrumbSchema, faqSchema } from "@/lib/schemas";
 import { faqs } from "@/data/faq";
 import { siteConfig } from "@/lib/site";
 import { images } from "@/lib/images";
@@ -33,6 +35,15 @@ export const metadata: Metadata = createMetadata({
 export default function AboutPage() {
   return (
     <>
+      <JsonLd
+        data={[
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "About", path: "/about" },
+          ]),
+          faqSchema(faqs),
+        ]}
+      />
       <section className="page-hero relative overflow-hidden">
         <BackgroundVideo
           src={images.aboutBannerVideo}

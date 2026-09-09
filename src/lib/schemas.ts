@@ -1,19 +1,38 @@
-import { siteConfig, brandedLogoAbsoluteUrl } from "./site";
+import { services } from "@/data/services";
 import { images } from "./images";
+import {
+  brandedLogoAbsoluteUrl,
+  canonicalUrl,
+  siteConfig,
+  socialProfileUrls,
+  toAbsoluteUrl,
+} from "./site";
+
+const businessId = `${siteConfig.url}/#business`;
+const websiteId = `${siteConfig.url}/#website`;
+const logoUrl = brandedLogoAbsoluteUrl();
+
+function organizationRef() {
+  return { "@id": businessId };
+}
 
 export function localBusinessSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": `${siteConfig.url}/#organization`,
+    "@type": ["ProfessionalService", "LocalBusiness"],
+    "@id": businessId,
     name: siteConfig.name,
+    legalName: siteConfig.name,
     description: siteConfig.description,
     url: siteConfig.url,
     telephone: siteConfig.phone,
     email: siteConfig.email,
-    image: images.og,
-    logo: brandedLogoAbsoluteUrl(),
+    image: [toAbsoluteUrl(images.og), logoUrl],
+    logo: logoUrl,
     priceRange: "$$",
+    currenciesAccepted: "CAD",
+    paymentAccepted: "Cash, Credit Card, Invoice",
+    foundingDate: String(siteConfig.foundedYear),
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address.street,
@@ -27,50 +46,87 @@ export function localBusinessSchema() {
       latitude: siteConfig.geo.latitude,
       longitude: siteConfig.geo.longitude,
     },
-    areaServed: siteConfig.serviceAreas.map((area) => ({
-      "@type": "City",
-      name: area,
-    })),
-    openingHoursSpecification: [
+    areaServed: [
       {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "07:00",
-        closes: "18:00",
+        "@type": "AdministrativeArea",
+        name: "Alberta",
       },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "08:00",
-        closes: "16:00",
-      },
+      ...siteConfig.serviceAreas.map((area) => ({
+        "@type": "City",
+        name: area,
+      })),
     ],
-    sameAs: Object.values(siteConfig.social),
+    openingHoursSpecification: siteConfig.openingHours.map((spec) => ({
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: spec.dayOfWeek,
+      opens: spec.opens,
+      closes: spec.closes,
+    })),
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: siteConfig.phone,
+      email: siteConfig.email,
+      contactType: "customer service",
+      areaServed: "CA",
+      availableLanguage: ["English"],
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: `${siteConfig.brandName} services`,
+      itemListElement: services.map((service) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: service.shortTitle,
+          url: canonicalUrl(`/services/${service.slug}`),
+        },
+      })),
+    },
+    knowsAbout: services.map((service) => service.shortTitle),
+    sameAs: socialProfileUrls(),
   };
+}
+
+export function websiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": websiteId,
+    url: siteConfig.url,
+    name: siteConfig.name,
+    description: siteConfig.description,
+    inLanguage: siteConfig.language,
+    publisher: organizationRef(),
+  };
+}
+
+export function siteGraph() {
+  return [localBusinessSchema(), websiteSchema()];
 }
 
 export function serviceSchema(service: {
   title: string;
   description: string;
   slug: string;
+  shortTitle?: string;
 }) {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: service.title,
+    name: service.shortTitle ?? service.title,
+    alternateName: service.title,
     description: service.description,
-    provider: { "@id": `${siteConfig.url}/#organization` },
+    provider: organizationRef(),
+    serviceType: service.shortTitle ?? service.title,
     areaServed: {
       "@type": "State",
       name: "Alberta",
     },
-    url: `${siteConfig.url}/services/${service.slug}`,
+    url: canonicalUrl(`/services/${service.slug}`),
   };
 }
 
-export function breadcrumbSchema(
-  items: { name: string; path: string }[],
-) {
+export function breadcrumbSchema(items: { name: string; path: string }[]) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -78,7 +134,7 @@ export function breadcrumbSchema(
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: `${siteConfig.url}${item.path}`,
+      item: canonicalUrl(item.path),
     })),
   };
 }
@@ -110,8 +166,10 @@ export function reviewSchema(
 
   return {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": `${siteConfig.url}/#organization`,
+    "@type": ["ProfessionalService", "LocalBusiness"],
+    "@id": businessId,
+    name: siteConfig.name,
+    url: siteConfig.url,
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: avgRating.toFixed(1),
@@ -140,25 +198,59 @@ export function articleSchema(post: {
   image: string;
   author: string;
 }) {
+  const url = canonicalUrl(`/blog/${post.slug}`);
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: post.title,
     description: post.excerpt,
-    image: post.image,
+    image: toAbsoluteUrl(post.image),
     datePublished: post.publishedAt,
+    dateModified: post.publishedAt,
+    inLanguage: siteConfig.language,
     author: {
       "@type": "Organization",
       name: post.author,
+      url: siteConfig.url,
     },
     publisher: {
       "@type": "Organization",
       name: siteConfig.name,
       logo: {
         "@type": "ImageObject",
-        url: brandedLogoAbsoluteUrl(),
+        url: logoUrl,
       },
     },
-    mainEntityOfPage: `${siteConfig.url}/blog/${post.slug}`,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+  };
+}
+
+export function contactPageSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    name: `Contact ${siteConfig.brandName}`,
+    url: canonicalUrl("/contact"),
+    mainEntity: organizationRef(),
+  };
+}
+
+export function itemListSchema(
+  name: string,
+  items: { name: string; path: string }[],
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      url: canonicalUrl(item.path),
+    })),
   };
 }

@@ -13,6 +13,8 @@ import { BackgroundVideo } from "@/components/sections/background-video";
 import { CtaSection } from "@/components/sections/cta-section";
 import { Card, CardContent } from "@/components/ui/card";
 import { images } from "@/lib/images";
+import { JsonLd } from "@/components/seo/json-ld";
+import { breadcrumbSchema } from "@/lib/schemas";
 
 export const metadata: Metadata = createMetadata({
   title: "Careers",
@@ -24,6 +26,12 @@ export const metadata: Metadata = createMetadata({
 export default function CareersPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Careers", path: "/careers" },
+        ])}
+      />
       <section className="page-hero relative overflow-hidden">
         <BackgroundVideo
           src={images.joinUsVideo}
